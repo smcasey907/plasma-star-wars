@@ -1,0 +1,106 @@
+$red-lightsaber: #FF0000;
+$green-lightsaber: #00FF00;
+$blue-lightsaber: #0000FF;
+$star-wars-yellow: #FFD700;
+
+.content {
+    width: 100vw;
+    height: 100vh;
+    display: inline-block;
+
+    
+    h1 {
+        font-size: 5em;
+        color: $star-wars-yellow;
+        text-align: center;
+
+    }
+
+    p {
+        font-size: 2em;
+        color: $star-wars-yellow;
+        text-align: center;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        .get-button {
+            align-items: center;
+            border: 2px solid $star-wars-yellow;
+            border-radius: 5px;
+            color: $star-wars-yellow;
+            font-size: 3em;
+        }
+    }
+
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        mat-card {
+            flex: 0 0 30%;
+            margin-bottom:20px;
+            background-color: #4e4e4e;
+            color: $star-wars-yellow;
+            border: 2px solid $star-wars-yellow;
+            border-radius: 5px;
+            margin: 15px auto;
+            width: 50%;
+            text-align: center;
+            box-shadow: #FFD700 0px 0px 10px 0px;
+
+            mat-card-header {
+                padding: 12px 12px;
+
+                .card-title {
+                    font-size: 2em;
+                    color: $green-lightsaber;
+                    text-align: start;
+                }
+
+                .card-date {
+                    font-size: 1em;
+                    color: $red-lightsaber;
+                    text-align: start;;
+                }
+            }
+
+            mat-card-content {
+                display: block;
+                padding: 0 16px;
+                background: black;
+                font-size: .5em;
+                height: 200px; /* Adjust this value to your liking */
+                overflow: hidden; /* Hide overflow */
+                position: relative; /* Position context for absolute positioning of inner elements */
+                
+            
+                .opening-crawl {
+                  position: absolute;
+                  width: 100%;
+                  top: 50%;
+                  animation: crawl 60s linear forwards;
+                }
+              
+                @keyframes crawl {
+                  0% {
+                    top: 100%;
+                    transform: perspective(300px) rotateX(25deg);
+                  }
+                  100% {
+                    top: -170%;
+                    transform: perspective(300px) rotateX(25deg);
+                  }
+                }
+              }
+            
+        }
+
+    }
+    
+}

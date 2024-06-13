@@ -1,6 +1,47 @@
 <main class="main">
-<div class="content">
-  <h1>{{ message }}</h1>
-</div>
+  <div class="content">
+    <h1 class="title">Star Wars Films</h1>
+    @if(films.length < 1 && errors.length < 1 && loading == false) {
+      <div class="button-container">
+        <button mat-button class="get-button" (click)="getFilms()">
+          Watch Spaceballs 2
+        </button>
+      </div>
+    } 
+    @else if(films.length < 1 && errors.length < 1 && loading == true) {
+     <p>Please wait while we consult Yogurt...</p>
+    }
+    @if(films.length > 0 && loading == false) {
+      <div class="card-container">
+        @for(film of films; track film) {
+          <mat-card>
+            <mat-card-header>
+              <mat-card-title class="card-title">{{ film.title }}</mat-card-title>
+              <!-- TODO: Format date via pipe -->
+              <mat-card-subtitle class="card-date">{{ film.release_date }}</mat-card-subtitle> 
+            </mat-card-header>
+            <mat-card-content>
+              <p class="opening-crawl">{{ film.opening_crawl }}</p>
+            </mat-card-content>
+          </mat-card>
+        }
+      </div>
+    } 
+    @if(errors.length > 0) {
+      <mat-list>
+        @for(error of errors; track error) {
+        <mat-list-item>
+          <p mat-line>{{ error }}</p>
+        </mat-list-item>
+        }
+      </mat-list>
+    }
+  </div>
+  <!-- TODO:
+   1. Filter Buttons
+   2. Add Starfield background
+   3. Clean up the look & feel of the cards
+   4. Make the auto scroll look a little cleaner...this will require some work with animations
+   5. Add extra space to right card to make margin between right-most card and edge match the margin of left-most card and edge
+   6. Add more info to cards based on API -->
 </main>
-<!--<router-outlet></router-outlet>-->

@@ -1,0 +1,82 @@
+{
+  "hash": "fe7f8447",
+  "configHash": "11b77d00",
+  "lockfileHash": "a68cc527",
+  "browserHash": "4ed44b39",
+  "optimized": {
+    "@angular/common/http": {
+      "src": "../../../../../node_modules/@angular/common/fesm2022/http.mjs",
+      "file": "@angular_common_http.js",
+      "fileHash": "3593139d",
+      "needsInterop": false
+    },
+    "@angular/core": {
+      "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
+      "file": "@angular_core.js",
+      "fileHash": "6eaf9d44",
+      "needsInterop": false
+    },
+    "@angular/platform-browser": {
+      "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
+      "file": "@angular_platform-browser.js",
+      "fileHash": "accdbe84",
+      "needsInterop": false
+    },
+    "@angular/router": {
+      "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
+      "file": "@angular_router.js",
+      "fileHash": "687fad6c",
+      "needsInterop": false
+    },
+    "@angular/material/button": {
+      "src": "../../../../../node_modules/@angular/material/fesm2022/button.mjs",
+      "file": "@angular_material_button.js",
+      "fileHash": "c52afbaf",
+      "needsInterop": false
+    },
+    "rxjs/operators": {
+      "src": "../../../../../node_modules/rxjs/dist/esm5/operators/index.js",
+      "file": "rxjs_operators.js",
+      "fileHash": "3fdae6ac",
+      "needsInterop": false
+    },
+    "@angular/material/progress-bar": {
+      "src": "../../../../../node_modules/@angular/material/fesm2022/progress-bar.mjs",
+      "file": "@angular_material_progress-bar.js",
+      "fileHash": "7950930e",
+      "needsInterop": false
+    },
+    "@angular/material/list": {
+      "src": "../../../../../node_modules/@angular/material/fesm2022/list.mjs",
+      "file": "@angular_material_list.js",
+      "fileHash": "0d0da11c",
+      "needsInterop": false
+    },
+    "@angular/material/card": {
+      "src": "../../../../../node_modules/@angular/material/fesm2022/card.mjs",
+      "file": "@angular_material_card.js",
+      "fileHash": "e4f01b84",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-EBG2ODSE": {
+      "file": "chunk-EBG2ODSE.js"
+    },
+    "chunk-LRVQJLXX": {
+      "file": "chunk-LRVQJLXX.js"
+    },
+    "chunk-WN5QPNBO": {
+      "file": "chunk-WN5QPNBO.js"
+    },
+    "chunk-DZA4OMFC": {
+      "file": "chunk-DZA4OMFC.js"
+    },
+    "chunk-YIF4ZQJZ": {
+      "file": "chunk-YIF4ZQJZ.js"
+    },
+    "chunk-LDTUJMIL": {
+      "file": "chunk-LDTUJMIL.js"
+    }
+  }
+}
