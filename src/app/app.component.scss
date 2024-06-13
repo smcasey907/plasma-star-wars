@@ -3,6 +3,15 @@ $green-lightsaber: #00FF00;
 $blue-lightsaber: #0000FF;
 $star-wars-yellow: #FFD700;
 
+// TODO:
+// Generate a proper Angular Material theme
+// Define more consistent predifined values, ie
+//     $small-gap: 3px;
+//     $medium-gap: 6px;
+//     $large-gap: 12px;
+// Define more generic global values for reusable components, ie
+//     like titles, buttons, paragraphs, etc.
+
 .content {
     width: 100vw;
     height: 100vh;

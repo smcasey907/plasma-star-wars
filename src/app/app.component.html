@@ -2,6 +2,7 @@
   <div class="content">
     <h1 class="title">Star Wars Films</h1>
     @if(films.length < 1 && errors.length < 1 && loading == false) {
+      <!-- TODO: Create components for general use items like buttons -->
       <div class="button-container">
         <button mat-button class="get-button" (click)="getFilms()">
           Watch Spaceballs 2
@@ -9,9 +10,11 @@
       </div>
     } 
     @else if(films.length < 1 && errors.length < 1 && loading == true) {
+      <!-- TODO: Implement a proper loading technique as a component, possibly utilizing @defer method  -->
      <p>Please wait while we consult Yogurt...</p>
     }
     @if(films.length > 0 && loading == false) {
+      <!-- TODO: Implement a proper card component to create generic cards -->
       <div class="card-container">
         @for(film of films; track film) {
           <mat-card>
